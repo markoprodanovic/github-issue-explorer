@@ -1,34 +1,43 @@
 .homepage {
-    width: 100%;
-    height: 100%;
-    background-color: #e91e63;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 150, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 150, 153, 1) 0%,
+    rgba(3, 189, 127, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 5rem;
 }
 
 .container {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
 }
 
 .container h1 {
-    font-family: 'Montserrat Bold';
-    font-size: 48px;
-    margin-bottom: 15px;
-    color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
-    .container h1 {
-        font-size: 32px;
-    }
+  .container h1 {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 480px) {
-    .container h1 {
-        font-size: 24px;
-    }
+  .container h1 {
+    font-size: 24px;
+  }
 }

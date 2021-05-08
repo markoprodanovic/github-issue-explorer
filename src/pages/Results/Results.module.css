@@ -10,39 +10,41 @@
   width: 100%;
   height: 80px;
   display: flex;
-  background-color: #e91e63;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 150, 153, 1) 0%,
+    rgba(3, 189, 127, 1) 100%
+  );
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .resultsHeader h1 {
-  font-family: 'Montserrat Bold';
+  font-weight: 700;
   color: #fff;
   margin-left: 40px;
   font-size: 24px;
 }
 
 .resultsHeader p {
-  font-family: 'Montserrat Light';
-  color: #880e4f;
+  font-weight: 700;
+  color: #fff;
   margin-right: 40px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .closeButton {
   position: absolute;
   top: 100px;
-  right: 40px;
-  /* width: 24px;
-  height: 24px; */
-  /* opacity: 0.6; */
+  right: 60px;
 }
 
 .closeButton i {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 1.2rem;
+  color: rgb(81, 81, 81);
+  font-size: 1.6rem;
   opacity: 100%;
 }
 
@@ -54,12 +56,13 @@
 
 .filterButtons input {
   margin-right: 12px;
+  font-size: 1rem;
 }
 
 .filterButton {
   border: none;
   background-color: #fff;
-  font-family: 'Montserrat Light';
+  font-weight: 400;
   color: #607d8b;
   cursor: pointer;
 }
@@ -71,9 +74,9 @@
 .activeButton {
   border: none;
   background-color: #fff;
-  font-family: 'Montserrat Light';
+  font-weight: 400;
   cursor: pointer;
-  color: #e91e63;
+  color: #03b384;
 }
 
 .activeButton:focus {

@@ -12,7 +12,7 @@ function Results() {
     return (
         <div className={styles.resultsPage}>
             <header className={styles.resultsHeader}>
-                <h1>GitHub Issue Viewer</h1>
+                <h1>GitHub Issue Explorer</h1>
                 <p>{githubUrl || 'No URL Provided'}</p>
             </header>
             <Link className={styles.closeButton} to="/">

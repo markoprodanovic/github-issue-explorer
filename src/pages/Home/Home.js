@@ -8,7 +8,8 @@ function Home() {
     return (
         <div className={styles.homepage}>
             <div className={styles.container}>
-                <h1>GitHub Issue Viewer</h1>
+                <p className={styles.logo}>🧭</p>
+                <h1>GITHUB ISSUE EXPLORER</h1>
                 <SearchBar />
             </div>
         </div>
