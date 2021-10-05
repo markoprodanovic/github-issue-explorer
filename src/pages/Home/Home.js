@@ -8,7 +8,6 @@ function Home() {
     return (
         <div className={styles.homepage}>
             <div className={styles.container}>
-                <p className={styles.logo}>🧭</p>
                 <h1>GITHUB ISSUE EXPLORER</h1>
                 <SearchBar />
             </div>

@@ -8,7 +8,9 @@ function IssueCard({ title, body, labels, state }) {
 
     let displayBody = 'No description provided';
 
-    if (body.length > 0 && body.length < 101) {
+    if (body == null) {
+        displayBody = '';
+    } else if (body.length > 0 && body.length < 101) {
         displayBody = body;
     } else if (body.length >= 100) {
         displayBody = `${body.substring(0, 100)}...`;

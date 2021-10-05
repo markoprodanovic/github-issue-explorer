@@ -47,6 +47,7 @@ function IssueExplorer({ githubUrl, filter }) {
                     setError('👀 No issues to see here');
                     return;
                 }
+                console.log(filteredData);
                 setIssues(filteredData);
                 setLoaded(true);
             })
@@ -59,6 +60,7 @@ function IssueExplorer({ githubUrl, filter }) {
 
     const issueCards = issues.map((i) => (
         <IssueCard
+            key={i.id}
             title={i.title}
             body={i.body}
             labels={i.labels}
