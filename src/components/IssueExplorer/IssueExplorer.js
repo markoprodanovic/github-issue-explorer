@@ -47,7 +47,6 @@ function IssueExplorer({ githubUrl, filter }) {
                     setError('👀 No issues to see here');
                     return;
                 }
-                console.log(filteredData);
                 setIssues(filteredData);
                 setLoaded(true);
             })
